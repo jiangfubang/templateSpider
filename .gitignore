@@ -2,7 +2,7 @@ templateSpider/log/*.log
 .idea
 templateSpider/common/*.pyc
 templateSpider/spiders/*.pyc
-templateSpider/test/*.pyc
-templateSpider/__pycache__/*.pyc
-templateSpider/common/__pycache__/*.pyc
-templateSpider/spiders/__pycache__/*.pyc
+templateSpider/test
+templateSpider/__pycache__
+templateSpider/common/__pycache__
+templateSpider/spiders/__pycache__
