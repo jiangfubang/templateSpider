@@ -11,11 +11,12 @@ class TemplateSpider(scrapy.Spider):
     # start_urls = ['http://template.com/']
 
     def start_requests(self):
-        yield scrapy.Request(
-            url="https://www.baidu.com",
-            callback=self.parse_desc,
-            dont_filter=True,
-        )
+        for i in range(1000):
+            yield scrapy.Request(
+                url="http://httpbin.org/ip",
+                callback=self.parse_desc,
+                dont_filter=True,
+            )
 
     def parse_desc(self, response):
         logger.info(response.text)

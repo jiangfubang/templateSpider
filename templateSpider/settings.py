@@ -28,7 +28,7 @@ LOG_FILE = log_file_path
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -104,4 +104,6 @@ DOWNLOAD_TIMEOUT = 10
 RETRY_HTTP_CODES = [500, 502, 503, 504, 408]
 RETRY_PROXY_CODES = []
 
-TEMP_PROXY_IP = {}
+proxy_pool = {}
+proxy_num = 3
+last_proxy = {"ip_port": None, "proxy_json": None}
