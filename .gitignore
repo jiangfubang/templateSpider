@@ -1,0 +1,8 @@
+templateSpider/log/*.log
+.idea
+templateSpider/common/*.pyc
+templateSpider/spiders/*.pyc
+templateSpider/test
+templateSpider/__pycache__
+templateSpider/common/__pycache__
+templateSpider/spiders/__pycache__
